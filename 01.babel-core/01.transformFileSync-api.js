@@ -1,8 +1,8 @@
-var babel = require('babel-core');
-var path = require('path');
+var babel = require('babel-core')
+var path = require('path')
 
-var result = babel.transformFileSync(path.resolve(__dirname) + "/script.js", {
-    babelrc: false
-});
+var result = babel.transformFileSync(path.resolve(__dirname) + '/script.js', {
+  babelrc: false,
+})
 
-console.log(result.code);
+console.log(result.code)

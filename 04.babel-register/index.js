@@ -1,5 +1,6 @@
+require('babel-polyfill')
 require('babel-register')({
-    'presets': ['env']
-});
-require('babel-polyfill');
-require('./script');
+  presets: ['env'],
+})
+
+require('./script')

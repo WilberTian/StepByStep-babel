@@ -1,7 +1,4 @@
-../node_modules/.bin/babel src/script.js -o dist/script.js
-../node_modules/.bin/babel src/delay.js -o dist/delay.js
-
-../node_modules/.bin/webpack
+../node_modules/.bin/babel src -d dist
 
 
 babel-runtime由三个部分组成：
@@ -9,3 +6,11 @@ babel-runtime由三个部分组成：
 - core-js
 - regenerator
 - helpers
+
+
+
+["transform-runtime", {
+    "helpers": true,
+    "polyfill": true,
+    "regenerator": true
+}]
